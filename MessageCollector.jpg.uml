@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.nettytest.demoserver.MessageCollector</OriginalElement>
+  <nodes>
+    <node x="346.0" y="695.0">com.nettytest.democlient.RPCClient</node>
+    <node x="27.999999999999943" y="240.0">com.nettytest.demoserver.MessageDecoder</node>
+    <node x="40.0" y="160.0">io.netty.channel.ChannelInboundHandlerAdapter</node>
+    <node x="0.0" y="80.0">io.netty.channel.ChannelInboundHandler</node>
+    <node x="200.0" y="315.0">com.nettytest.interceptor.IMessageHandler</node>
+    <node x="332.0" y="160.0">io.netty.channel.ChannelHandler.Sharable</node>
+    <node x="450.0" y="470.0">com.nettytest.demoserver.MessageHandlers</node>
+    <node x="0.0" y="620.0">com.nettytest.domain.ExpResponse</node>
+    <node x="0.0" y="395.0">com.nettytest.interceptor.FibRequestHandler</node>
+    <node x="213.0" y="545.0">com.nettytest.demoserver.MessageOutput</node>
+    <node x="229.0" y="470.0">com.nettytest.democlient.ResponseRegistry</node>
+    <node x="165.0" y="770.0">com.nettytest.domain.User</node>
+    <node x="0.0" y="470.0">com.nettytest.controller.MybatisController</node>
+    <node x="181.0" y="620.0">com.nettytest.democlient.RPCResponse</node>
+    <node x="362.0" y="620.0">com.nettytest.domain.ExpRequest</node>
+    <node x="511.0" y="695.0">com.nettytest.demoserver.RPCServer</node>
+    <node x="0.0" y="545.0">com.nettytest.demoserver.MessageRegistry</node>
+    <node x="228.0" y="240.0">com.nettytest.demoserver.MessageCollector</node>
+    <node x="336.5" y="80.0">io.netty.channel.ChannelHandlerAdapter</node>
+    <node x="410.0" y="545.0">com.nettytest.democlient.RPCException</node>
+    <node x="384.0" y="395.0">com.nettytest.interceptor.ExpRequestHandler</node>
+    <node x="535.0" y="620.0">com.nettytest.democlient.DemoClient</node>
+    <node x="424.0" y="240.0">com.nettytest.demoserver.MessageEncoder</node>
+    <node x="204.0" y="395.0">com.nettytest.interceptor.DefaultHandler</node>
+    <node x="0.0" y="770.0">com.nettytest.democlient.RequestId</node>
+    <node x="599.0" y="545.0">com.nettytest.demoserver.MessageInput</node>
+    <node x="0.0" y="695.0">com.nettytest.demoserver.DemoServer</node>
+    <node x="364.41666666666663" y="0.0">io.netty.channel.ChannelHandler</node>
+    <node x="173.0" y="695.0">com.nettytest.democlient.RPCRequest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.nettytest.interceptor.ExpRequestHandler" target="com.nettytest.interceptor.IMessageHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="476.0" y="370.0" />
+      <point x="340.0" y="370.0" />
+      <point x="56.0" y="15.0" />
+    </edge>
+    <edge source="io.netty.channel.ChannelInboundHandler" target="io.netty.channel.ChannelHandler">
+      <point x="5.6843418860808015E-14" y="-15.0" />
+      <point x="108.00000000000006" y="55.0" />
+      <point x="391.0833333333333" y="55.0" />
+      <point x="-53.33333333333334" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.interceptor.FibRequestHandler" target="com.nettytest.interceptor.IMessageHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="92.0" y="370.0" />
+      <point x="228.0" y="370.0" />
+      <point x="-56.0" y="15.0" />
+    </edge>
+    <edge source="io.netty.channel.ChannelInboundHandlerAdapter" target="io.netty.channel.ChannelHandlerAdapter">
+      <point x="68.0" y="-15.0" />
+      <point x="244.0" y="135.0" />
+      <point x="390.5" y="135.0" />
+      <point x="-54.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageCollector" target="io.netty.channel.ChannelHandler.Sharable">
+      <point x="44.0" y="-15.0" />
+      <point x="-28.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageEncoder" target="io.netty.channel.ChannelHandler">
+      <point x="53.33333333333334" y="-15.0" />
+      <point x="557.3333333333334" y="215.0" />
+      <point x="563.0" y="215.0" />
+      <point x="563.0" y="55.0" />
+      <point x="497.75" y="55.0" />
+      <point x="53.33333333333334" y="15.0" />
+    </edge>
+    <edge source="io.netty.channel.ChannelInboundHandlerAdapter" target="io.netty.channel.ChannelInboundHandler">
+      <point x="-68.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageCollector" target="io.netty.channel.ChannelInboundHandlerAdapter">
+      <point x="-44.0" y="-15.0" />
+      <point x="272.0" y="215.0" />
+      <point x="244.0" y="215.0" />
+      <point x="68.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageEncoder" target="io.netty.channel.ChannelHandler.Sharable">
+      <point x="-53.33333333333334" y="-15.0" />
+      <point x="450.66666666666663" y="215.0" />
+      <point x="416.0" y="215.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageDecoder" target="io.netty.channel.ChannelInboundHandlerAdapter">
+      <point x="5.6843418860808015E-14" y="-15.0" />
+      <point x="-68.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.interceptor.DefaultHandler" target="com.nettytest.interceptor.IMessageHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.nettytest.demoserver.MessageEncoder" target="io.netty.channel.ChannelHandlerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="504.0" y="215.0" />
+      <point x="498.5" y="215.0" />
+      <point x="54.0" y="15.0" />
+    </edge>
+    <edge source="io.netty.channel.ChannelHandlerAdapter" target="io.netty.channel.ChannelHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="247.0" y="532.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
