@@ -1,5 +1,8 @@
 package com.nettytest.controller;
 
+import com.nettytest.MySpringBootApp;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,6 +44,15 @@ public class HelloController {
     public ModelAndView thymeleafTest() {
         ModelAndView modelAndView = new ModelAndView("thymeleaf");
         return modelAndView;
+    }
+
+    @RequestMapping("/logTest")
+    @ResponseBody
+    public String logTest() {
+        Logger logger=LoggerFactory.getLogger(MySpringBootApp.class);
+        logger.info("start");
+        logger.error("test errer!!");
+        return logger.toString();
     }
 
 }
